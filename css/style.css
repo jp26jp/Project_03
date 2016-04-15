@@ -1,0 +1,403 @@
+/* ## Base Styles
+-------------------------------------------------------------------------------- */
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+}
+body {
+  color: #878787;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Merriweather", serif;
+  background-color: #fff;
+}
+
+/* ## Fonts Styles
+-------------------------------------------------------------------------------- */
+
+/* Default Headings --------------- */
+
+h1 {
+  color: #fff;
+  font-size: 1.5em;
+  line-height: 1.2;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+}
+h2 {
+  color: #37474F;
+  font-size: 1.28em;
+  line-height: 1.2;
+  font-weight: normal;
+  margin: 10px;
+  display: block;
+}
+h3 {
+  color: #37474F;
+  font-size: 1.35em;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 15px 0;
+}
+h4 {
+  font-size: 1.1em;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+
+/* Custom Headings --------------- */
+
+form h3 {
+  margin-top:0;
+}
+
+/* Links --------------- */
+
+a:link, a:active, a:visited {
+  color: #03A9F4;
+  text-decoration: none;
+}
+a:hover {
+  color: #47c4fd;
+}
+
+/* Paragraphs --------------- */
+
+p {
+  font-size: 1em;
+  margin: 0 0 20px;
+}
+
+/* Micro Styles --------------- */
+
+b {
+  font-weight: 800;
+}
+
+/* Text Alignment --------------- */
+
+.center {
+  text-align: center;
+}
+
+/* ## Object Styles
+-------------------------------------------------------------------------------- */
+
+/* Images --------------- */
+
+img {
+  max-width: 100%;
+  border-radius: 2px;
+}
+
+/* Page break --------------- */
+
+hr {
+  margin:30px 0;
+}
+
+/* Containers --------------- */
+
+header {
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid #E9EAEA;
+  padding: 20px;
+  z-index: 1000;
+  background-color: #37474F;
+}
+section, main {
+  padding: 20px 0;
+}
+.container {
+  width: 100%;
+  max-width: 100%;
+  padding: 0 20px;
+  margin: auto;
+}
+footer {
+  padding: 20px;
+}
+
+/* Columns --------------- */
+
+[class*='col'] {
+  display: table-cell;
+  padding: 10px;
+}
+.col-1-1 {
+  width: 100%;
+}
+.col-1-4 {
+  width: 25%;
+}
+.col-1-5 {
+  width: 20%;
+}
+.col-1-3 {
+  width: 33%;
+}
+.col-2-5 {
+  width: 40%;
+}
+.col-1-2 {
+  width: 50%;
+}
+.col-3-5 {
+  width: 60%;
+}
+.col-3-4 {
+  width: 75%;
+}
+.col-4-5 {
+  width: 80%;
+}
+.switch-right {
+  float: right;
+}
+
+/* Links --------------- */
+
+a {
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+/* ## Form Styles
+-------------------------------------------------------------------------------- */
+
+form {
+  display: table;
+  width: 100%;
+}
+fieldset {
+  padding:0;
+  margin:0;
+  border:0;
+  width:50%;
+  float:left;
+}
+legend {
+  font-size: 1.35em;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #37474F;
+  margin: 15px 0;
+  padding: 10px;
+}
+.form-row {
+  width: 100%;
+  display: table;
+}
+.input-field {
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background-color: #f5f5f5;
+  -webkit-transition:all .3s;
+  transition:all .3s;
+}
+.input-field:hover {
+  background-color: #e9e9e9;
+}
+.input-field:focus {
+  border: 1px solid #37474F;
+  background-color: #e9e9e9;
+}
+form textarea {
+  min-height: 150px;
+}
+form .required {
+  position:relative;
+}
+form .required:before {
+  content: "\f069";
+  font-family: FontAwesome;
+  color:#ea7b73;
+  font-size:10px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+form button.input-field {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  background-color: #00BFA5;
+  color: #fff;
+  border: 0px;
+}
+form button.input-field:hover {
+  background-color:#4cd2c0;
+}
+form .newsletter label {
+  cursor: pointer;
+  display: block;
+  margin: 8px 0;
+}
+#zip {
+  width: 200px;
+}
+
+/* Dropdown --------------- */
+
+form select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  color: #7F7F7F;
+  background-image: url("data:image/svg+xml;utf8,<svg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='20px' height='20px' viewBox='0 0 12 12' xml:space='preserve'><rect style='fill:none' width='12' height='12'/><polygon style='fill:#7F7F7F' points='3.3,4.9 3.2,4.9 6,7.7 8.8,4.9 8.7,4.9 '/></svg>");
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: 100% center;
+  cursor: pointer;
+}
+
+form option:disabled {
+  color:#ccc;
+}
+
+/* Radios & Checkboxes --------------- */
+
+form input[type="checkbox"], form input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  position: relative;
+  border: 2px solid transparent;
+  text-align: center;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background: #eff0f1;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 0.5rem;
+  outline: none;
+  position: relative;
+  z-index: 1000;
+}
+form input[type="checkbox"] {
+  border-radius: 2px;
+}
+form input[type="radio"] {
+  border-radius: 50%;
+}
+form input[type="radio"]::after {
+  border-radius: 50%;
+}
+
+/* Radios & Checkboxes (Checked State) --------------- */
+
+form input[type="checkbox"]:checked, form input[type="radio"]:checked {
+  border: 2px solid #37474F;
+}
+form input[type="checkbox"]:checked::before, form input[type="radio"]:checked::before {
+  position: absolute;
+  color: #37474F;
+}
+form input[type="checkbox"]:checked::before {
+  content: '\2713';
+  top: 0;
+  left: 0;
+  height: 12px;
+  width: 12px;
+  font-size: 12px;
+  line-height: 12px;
+}
+form input[type="radio"]:checked::before {
+  content: '';
+  top: 50%;
+  left: 50%;
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+  background-color: #37474F;
+  transform: translate(-50%, -50%);
+}
+
+/* Placeholder --------------- */
+
+input::-webkit-input-placeholder {
+  color:#ccc;
+}
+input:-moz-placeholder {
+  color:#ccc;
+}
+input::-moz-placeholder {
+  color:#ccc;
+}
+input:-ms-input-placeholder {
+  color:#ccc;
+}
+input::placeholder {
+  color:#ccc;
+}
+
+/* ## Media Queries
+-------------------------------------------------------------------------------- */
+
+@media screen and (min-width:1024px) {
+  fieldset {
+    padding:15px;
+  }
+  .contact-section {
+    border-right: 1px solid #eee;
+  }
+}
+
+@media screen and (max-width:1024px) {
+  .container {
+    max-width:768px;
+  }
+  fieldset {
+    width:100%;
+    float:none;
+  }
+  .contact-section {
+    padding-bottom:30px;
+    margin-bottom:30px;
+    border-bottom:1px inset #999;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .back-to-top {
+    display: none;
+  }
+}
+@media screen and (max-width:768px) {
+  [class*='col'] {
+    width: 100%;
+    display:table;
+  }
+  .col-1-4 {
+    padding-bottom: 0;
+  }
+}
+
+/* Clearfix
+--------------- */
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
